@@ -12,13 +12,21 @@ use App\Http\Controllers\ProductsubCategory;
 use App\Http\Controllers\ProductImageController;
 use App\Http\Controllers\frontController\FrontHomePageController;
 use App\Http\Controllers\frontController\ShopController;
+use App\Http\Controllers\frontController\MyaccountController;
+use App\Http\Controllers\frontController\CartController;
 use Illuminate\Http\Request;
 
 
 
 // Front end
 Route::get('/',[FrontHomePageController::Class, 'index'])->name('front.home');
+// shop
 Route::get('front/shop/{categorySlug?}/{subCategorySlug?}',[ShopController::Class, 'shopIndex'])->name('front.shop');
+// account
+Route::get('front/account',[MyaccountController::Class, 'index'])->name('front/account');
+// cart
+Route::get('front/cart',[CartController::Class, 'index'])->name('front/cart');
+
 
 
 // debug
