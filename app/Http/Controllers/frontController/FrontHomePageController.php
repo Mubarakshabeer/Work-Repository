@@ -20,5 +20,11 @@ class FrontHomePageController extends Controller
         return view('front.home',compact('Product','LatestProduct'));
     }
 
+    public function aboutus()
+    {
+        
+        return view('front.aboutus');
+    }
+
    
 }

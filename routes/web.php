@@ -14,6 +14,9 @@ use App\Http\Controllers\frontController\FrontHomePageController;
 use App\Http\Controllers\frontController\ShopController;
 use App\Http\Controllers\frontController\MyaccountController;
 use App\Http\Controllers\frontController\CartController;
+use App\Http\Controllers\frontController\MyorderController;
+use App\Http\Controllers\frontController\RegisterController;
+use App\Http\Controllers\frontController\ContactusController;
 use Illuminate\Http\Request;
 
 
@@ -26,6 +29,23 @@ Route::get('front/shop/{categorySlug?}/{subCategorySlug?}',[ShopController::Clas
 Route::get('front/account',[MyaccountController::Class, 'index'])->name('front/account');
 // cart
 Route::get('front/cart',[CartController::Class, 'index'])->name('front/cart');
+
+// my-orders
+Route::get('front/myOrders',[ContactusController::Class, 'index'])->name('front/myOrders');
+
+// register
+Route::get('front/register',[RegisterController::Class, 'index'])->name('front/register');
+
+// aboutus
+Route::get('front/aboutus',[FrontHomePageController::Class, 'aboutus'])->name('front.aboutus');
+
+// contact us 
+Route::get('front/contactus',[ContactusController::Class, 'index'])->name('front.contactus');
+
+// forget password
+Route::get('front/contactus',[ContactusController::Class, 'index'])->name('front.contactus');
+
+
 
 
 
