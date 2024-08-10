@@ -15,9 +15,9 @@
 				<div class="footer-card">
 					<h3>Important Links</h3>
 					<ul>
-						<li><a href="about-us.php" title="About">About</a></li>
-						<li><a href="contact-us.php" title="Contact Us">Contact Us</a></li>						
-						<li><a href="#" title="Privacy">Privacy</a></li>
+						<li><a href="{{ route('front.aboutus') }}" title="About">About</a></li>
+						<li><a href="{{ route('front.contactus') }}" title="Contact Us">Contact Us</a></li>						
+						<li><a href="" title="Privacy">Privacy</a></li>
 						<li><a href="#" title="Privacy">Terms & Conditions</a></li>
 						<li><a href="#" title="Privacy">Refund Policy</a></li>
 					</ul>
@@ -28,9 +28,9 @@
 				<div class="footer-card">
 					<h3>My Account</h3>
 					<ul>
-						<li><a href="#" title="Sell">Login</a></li>
-						<li><a href="#" title="Advertise">Register</a></li>
-						<li><a href="#" title="Contact Us">My Orders</a></li>						
+						<li><a href="{{ route('admin.login') }}" title="Sell">Login</a></li>
+						<li><a href="{{ route('front/register') }}" title="Advertise">Register</a></li>
+						<li><a href="{{ route('front/myOrders') }}" title="Contact Us">My Orders</a></li>						
 					</ul>
 				</div>
 			</div>			
